@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simple Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/mycss.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/myjs.js"></script>
+<body>
+    <header>
+        <nav class="nav-list">
+            <ul class="left-menu">
+                <li id="menu-ico"><a onclick="openNav()" href="#!"><i class="material-icons">menu</i></a></li>
+                <li><a href="#!"><i class="material-icons">home</i></a></li>
+                <li><a href="#!"><i class="material-icons">account_balance_wallet</i></a></li>
+                <li><a href="#!"><i class="material-icons">person</i></a></li>
+            </ul>
+        </nav>
+        <ul id="mySideNav" class="sidenav">
+            <li><a href="#!"><i class="material-icons">home</i></a>Home</li>
+            <li><a href="#!"><i class="material-icons">account_balance_wallet</i>Sales</a></li>
+            <li><a href="#!"><i class="material-icons">person</i></a>Clients</li>
+        </ul>
+    </header>
+    
+    <main>
+        <div class="container">
+            <form id="person-form" action="modelo/controller.php" method="POST" name="regPers">
+                <div><input type="text" name="txtname" placeholder="Nome"></div>
+                <div><input type="text" name="txtsurname" placeholder="Sobrenome"></div>
+                <div><input type="text" class="datepicker" name="txtage" placeholder="Data de nascimento"></div>
+                <div><input class="btn" type="submit" value="cadastrar"></div>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
